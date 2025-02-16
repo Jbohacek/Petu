@@ -1,0 +1,44 @@
+﻿Update 0.9.8
+20.3.2022
+
+Fixed
+- Loading time
+- items in inventory will show the accurate data
+
+Adjusted
+
+Added
+- New minigame
+- new textures to minigames
+- new not working background
+- Pets now will change their size (depends on how long they are alive)
+- Changed UI in minigames
+
+Removed
+- Xp bar
+
+
+
+Update 0.8.9	
+10.2.2022
+
+Fixed
+-Money will now be spend
+
+Adjusted
+-Hunger and food comsunsion
+-Food and drinks will now add more
+
+Added
+-1 mini game (sheep Hunt, name will be changed)
+
+-icons
+	-shop
+	-backpack
+	-save
+	-back arrow
+
+- Changelog
+
+Removed
+-nothing

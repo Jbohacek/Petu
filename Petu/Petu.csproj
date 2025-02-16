@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54C88F57-60F4-4B53-8AC1-0E7D401430A5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Petu</RootNamespace>
+    <AssemblyName>Petu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Petuikona.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPowerOnOf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPowerOnOf.Designer.cs">
+      <DependentUpon>AdminPowerOnOf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnimalsIcon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnimalsIcon.resx</DependentUpon>
+    </Compile>
+    <Compile Include="BackGround\BackgroundChoser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackGround\BackgroundChoser.Designer.cs">
+      <DependentUpon>BackgroundChoser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackGround\BackgroundImages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BackgroundImages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="BasicImages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BasicImages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeLog\ChangeLog.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChangeLog.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeLog\ChangeLogShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeLog\ChangeLogShow.Designer.cs">
+      <DependentUpon>ChangeLogShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateForm.Designer.cs">
+      <DependentUpon>CreateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FontPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FontPopUp.Designer.cs">
+      <DependentUpon>FontPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games\GameSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games\GameSelect.Designer.cs">
+      <DependentUpon>GameSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games\GoldQuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games\GoldQuest.Designer.cs">
+      <DependentUpon>GoldQuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games\GoldQuestResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GoldQuestResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Policko.cs" />
+    <Compile Include="Games\SheepHunt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games\SheepHunt.Designer.cs">
+      <DependentUpon>SheepHunt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games\SheepHuntResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SheepHuntResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs" />
+    <Compile Include="Icons\Ikony.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ikony.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Item.cs" />
+    <Compile Include="ItemsIcon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ItemsIcon.resx</DependentUpon>
+    </Compile>
+    <Compile Include="LoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadForm.Designer.cs">
+      <DependentUpon>LoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pet.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Saves1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Saves.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ShopForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShopForm.Designer.cs">
+      <DependentUpon>ShopForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPowerOnOf.resx">
+      <DependentUpon>AdminPowerOnOf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimalsIcon.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AnimalsIcon.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackGround\BackgroundChoser.resx">
+      <DependentUpon>BackgroundChoser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackGround\BackgroundImages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BackgroundImages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicImages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BasicImages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeLog\ChangeLog.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ChangeLog.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeLog\ChangeLogShow.resx">
+      <DependentUpon>ChangeLogShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateForm.resx">
+      <DependentUpon>CreateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FontPopUp.resx">
+      <DependentUpon>FontPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games\GameSelect.resx">
+      <DependentUpon>GameSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games\GoldQuest.resx">
+      <DependentUpon>GoldQuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games\GoldQuestResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GoldQuestResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games\SheepHunt.resx">
+      <DependentUpon>SheepHunt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games\SheepHuntResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SheepHuntResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\Ikony.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Ikony.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemsIcon.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ItemsIcon.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadForm.resx">
+      <DependentUpon>LoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ShopForm.resx">
+      <DependentUpon>ShopForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\windows_command_prompt.ttf" />
+    <None Include="Saves.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Saves1.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Water Icon Empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Food Icon Empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Food Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Water Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hearth icon Empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hearth icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red panda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squrtle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Missing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Steak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Honey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Muffin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WaterBottle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopicon_Selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackArrow_Activated.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayButton_Active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveIcon_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backpack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backpack_Active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeLog\ChangeLogTextFile.txt" />
+    <Content Include="Petuikona.ico" />
+    <None Include="Resources\MoneyOnGround.png" />
+    <None Include="Resources\Background.png" />
+    <None Include="Resources\stonefloorWithArrow.jpg" />
+    <None Include="Resources\stonefloor.png" />
+    <None Include="Resources\MoneyOnfloor.png" />
+    <None Include="Resources\dark.png" />
+    <None Include="Resources\BatUp.png" />
+    <None Include="Resources\Batdown.png" />
+    <None Include="Resources\HearthBottle.png" />
+    <None Include="Resources\Petuikona.ico" />
+    <None Include="Resources\Petuikona.png" />
+    <None Include="Resources\BasicPrewiev.png" />
+    <None Include="Resources\Basic7.png" />
+    <None Include="Resources\Basic6.png" />
+    <None Include="Resources\Basic5.png" />
+    <None Include="Resources\Basic4.png" />
+    <None Include="Resources\Basic3.png" />
+    <None Include="Resources\Basic2.png" />
+    <None Include="Resources\Basic1.png" />
+    <None Include="Resources\BacgroundChoseIcon_Active.png" />
+    <None Include="Resources\BacgroundChoseIcon.png" />
+    <None Include="Resources\Cutecat.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
